@@ -99,7 +99,7 @@ def main(entero='1337', dec='007'):
     n16 = n.a_base(16)
 
     print(dd('''
-                Number:\t\t{0}
+                Numero:\t\t{0}
                 Float:\t\t{1}
                 Binario:\t{2}
                 Octal:\t\t{3}
