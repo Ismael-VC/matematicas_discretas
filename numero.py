@@ -1,6 +1,15 @@
-import decimal
+#!/usr/bin/env python3
+
 
 from textwrap import dedent as dd
+
+import decimal
+
+
+'''Permite manipular numeros con precision decimal en distintos sistemas (2, 8, 10 y 16) numericos.'''
+
+
+__author__ = 'Ismael Venegas Castelló    < ismael.vc1337@gmail.com >'
 
 
 class Numero():
@@ -34,8 +43,7 @@ class Numero():
         return '{0}.{1} ({2})'.format(''.join(n for n in self.entero),
                                       ''.join(n for n in self.dec),
                                       self.base)
-                                    
-
+                                 
 
     def a_float(self):
         posiciones_entero = list(reversed(range(len(self.entero))))
@@ -78,7 +86,6 @@ class Numero():
         if not productos:
             productos = ['0']
 
-            
         return '{0}.{1} ({2})'.format(''.join(restos), ''.join(productos),
                                       base)
                        
