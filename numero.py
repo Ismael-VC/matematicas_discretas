@@ -79,6 +79,8 @@ class Numero():
         while fraccion:
             producto = int(fraccion * base)
             fraccion = (fraccion * base) - producto
+            if producto in hexa and base == 16:
+                producto = hexa[producto] 
             productos.append(str(producto))
             if len(productos) == precision:
                 break
